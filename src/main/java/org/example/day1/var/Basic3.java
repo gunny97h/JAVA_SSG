@@ -16,7 +16,7 @@ public class Basic3 {
         double height = 188.8888; // 소수점을 거의 두 배 쓸 수 있어서 더블
 
         String name = "김건희"; // 0글자 이상 (문자열) // 기본형이 아니기에 대문자를 사용
-        String job = "자바 프로그래머";
+        String job = "자바  프로그래머";
 
 // 내가 미래에 가질 재산 프린트 (money+bank)
 // 홍길동은 자바 프로그래머이다. 프린트 (name+job)

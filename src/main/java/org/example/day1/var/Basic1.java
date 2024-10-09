@@ -9,7 +9,7 @@ public class Basic1 {
         char gender = 'm';
         boolean married = true;     //실제로는 1로 저장
 
-        System.out.println("age = " + age);
+        System.out.println("age  = " + age);
         System.out.println("height = " + height);
         System.out.println("gender = " + gender);
         System.out.println("married = " + married);

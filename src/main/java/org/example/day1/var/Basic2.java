@@ -13,7 +13,7 @@ public class Basic2 {
         final char COLOR = 'b';
         boolean rain = false;
 
-        System.out.println("달은 : " + month);
+        System.out.println("달은 :  " + month);
         System.out.println("온도는 : " + tempThis);
         System.out.println("색은 : " + COLOR);
         System.out.println("비가 오나 : " + rain);
