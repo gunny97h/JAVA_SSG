@@ -1,0 +1,21 @@
+plugins {   //Groovy라는 문법 사용
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {  //다운로드 받을 저장소 지정
+    mavenCentral()
+}
+
+dependencies {  //필요한 부품
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    // https://mvnrepository.com/artifact/org.jsoup/jsoup
+    implementation 'org.jsoup:jsoup:1.18.1' // 코끼리 모양을 돌려서 다운로드 및 확인
+}
+
+test {
+    useJUnitPlatform()
+}
