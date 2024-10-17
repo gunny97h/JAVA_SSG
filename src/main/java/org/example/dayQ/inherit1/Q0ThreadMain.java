@@ -12,7 +12,10 @@ String[] foods = {"a", "b", "c", "d", "e", "f"}; 배열의 값을 하나씩 프�
 public class Q0ThreadMain {
 
     public static void main(String[] args) {
-
+        // 스레드 사용 3가지 단계
+        // 1. 스레드 상속받아 클래스 정의
+        // 2. 1에서 만든 스레드 클래스 객체 생성
+        // 3. 실행 대기줄에 등록
         Q0Thread1 thread1 = new Q0Thread1();
         Q0Thread2 thread2 = new Q0Thread2();
         Q0Thread3 thread3 = new Q0Thread3();
