@@ -1,18 +1,14 @@
-package org.example.dayQ.day15;
+package org.example.day15.형변환참조;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-// TrafficLight 리팩토링
-// 리팩토링(refactoring)은 소프트웨어 공학에서 '결과의 변경 없이 코드의 구조를 재조정함'을 뜻한다.
-// 가독성을 높이고 유지보수를 편하게 하기 위해 코드를 재개편하는 것을 의미한다.
-
-public class TrafficLight2 {
-    static JFrame f;
+//NEW01-Java-6(형변환+컬렉션+제너릭).pdf p.30
+public class TrafficLight {
     public static void main(String[] args) {
-        f = new JFrame("나의 신호등");
+        JFrame f = new JFrame("나의 신호등");
         f.setSize(500, 700);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -41,30 +37,34 @@ public class TrafficLight2 {
         // 버튼에 기능 만들기
         red.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                show("r.png");
+                // 이미지를 만들어 라벨에 끼운 후 프레임에 add하기
+                JLabel label = new JLabel();
+                ImageIcon icon = new ImageIcon("r.png");
+                label.setIcon(icon);
+                f.add(label);
+                f.setVisible(true);  // JLabel을 동적으로 새로 만들기 때문에 다시 넣어줘야 함
             }
         });
         green.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                show("g.png");
+                JLabel label = new JLabel();
+                ImageIcon icon = new ImageIcon("g.png");
+                label.setIcon(icon);
+                f.add(label);
+                f.setVisible(true);
             }
         });
         yellow.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                show("y.png");
+                JLabel label = new JLabel();
+                ImageIcon icon = new ImageIcon("y.png");
+                label.setIcon(icon);
+                f.add(label);
+                f.setVisible(true);
             }
         });
 
         f.setVisible(true);
 
-    } // main
-
-    public static void show(String filename) {
-        // 이미지를 만들어 라벨에 끼운 후 프레임에 add하기
-        JLabel label = new JLabel();
-        ImageIcon icon = new ImageIcon(filename);
-        label.setIcon(icon);
-        f.add(label);
-        f.setVisible(true);  // JLabel을 동적으로 새로 만들기 때문에 다시 넣어줘야 함
     }
 }
