@@ -42,12 +42,18 @@ public class 문자판독기 {
         // 1. text.length(); 글자수 구해줌.
         b1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                String text = area.getText();  // 입력한 문장
-                JOptionPane.showMessageDialog(f, "글자수는 " + text.length());
+                String text = area.getText();  // area에 입력한 문장
+                //글자수와 단어수를 파악해주세요.!
+                int length = text.replace(" ", "").length();
+                String[] data2 = text.split(" ");
+                int count = data2.length;
+                //다이얼로그창에 결과를 띄우자!
+                JOptionPane.showMessageDialog(f,
+                        "단어수는 " +  count + "\n" +
+                                "글자수는 " + length );
                 area.setText("");
             }
         });  // 익명클래스
-
 
         // 2. area.setBackground(Color.yellow);
         b2.addActionListener(new ActionListener() {
