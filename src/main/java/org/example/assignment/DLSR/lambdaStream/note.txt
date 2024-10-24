@@ -1,0 +1,9 @@
+
+        // 참조형 스트림 (Stream<T>) ==>  collect(Collectors.toList()); 가능
+        // 기본형 스트림 (IntStream, LongStream, DoubleStream 등)
+        // 기본형 스트림을 참조형 스트림으로 변환해주는 함수 boxed()
+        // 참조형 스트림을 기본형 스트림으로 변환해주는 함수는 타입에 따라
+        // mapToInt(): Stream<Integer>를 IntStream으로 변환
+        // mapToLong(): Stream<Long>를 LongStream으로 변환
+        // mapToDouble(): Stream<Double>를 DoubleStream으로 변환
+        // distinct(): 중복 제거
