@@ -28,6 +28,8 @@ public class 랜덤값스트림만들기 {
         // count() 연산 이후 스트림은 소모되므로,
         // ds.distinct().sorted()에서 IllegalStateException이 발생합니다.
 
+        // 원인 : foreach를 사용하면 stream이 닫히므로 맨 마지막에 사용!
+
         // 이를 해결하려면, DoubleStream 스트림을 다시 생성하거나,
         // count와 distinct().sorted() 작업을 같은 스트림에서 한 번에 처리해야 합니다.
 
