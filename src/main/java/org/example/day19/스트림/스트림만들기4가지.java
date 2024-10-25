@@ -3,7 +3,7 @@ package org.example.day19.스트림;
 import java.util.*;
 import java.util.stream.IntStream;
 
-public class 추가문제 {
+public class 스트림만들기4가지 {
     public static void main(String[] args) {
         // 1. List<Double> list1 = new ArrayList<>();
         //   1000, 2000, 3000, 4000, 5000을 넣은 후
