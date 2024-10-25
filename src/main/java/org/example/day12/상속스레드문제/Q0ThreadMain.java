@@ -1,4 +1,4 @@
-package org.example.dayQ.day12;
+package org.example.day12.상속스레드문제;
 
 /*
 스레드 추가 문제
@@ -16,9 +16,9 @@ public class Q0ThreadMain {
         // 1. 스레드 상속받아 클래스 정의
         // 2. 1에서 만든 스레드 클래스 객체 생성
         // 3. 실행 대기줄에 등록
-        org.example.dayQ.day12.Q0Thread1 thread1 = new Q0Thread1();
-        org.example.dayQ.day12.Q0Thread2 thread2 = new Q0Thread2();
-        org.example.dayQ.day12.Q0Thread3 thread3 = new Q0Thread3();
+        Q0Thread1 thread1 = new Q0Thread1();
+        Q0Thread2 thread2 = new Q0Thread2();
+        Q0Thread3 thread3 = new Q0Thread3();
         thread1.start();
         thread2.start();
         thread3.start();

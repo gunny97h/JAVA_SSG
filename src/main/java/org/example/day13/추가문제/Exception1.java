@@ -1,4 +1,4 @@
-package org.example.dayQ.day13;
+package org.example.day13.추가문제;
 
 public class Exception1 { // 예외처리문제.java
     public static void main(String[] args) {

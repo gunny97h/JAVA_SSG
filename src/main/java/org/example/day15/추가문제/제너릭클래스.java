@@ -1,4 +1,4 @@
-package org.example.dayQ.day15;
+package org.example.day15.추가문제;
 
 public class 제너릭클래스 {
 

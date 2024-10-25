@@ -1,4 +1,4 @@
-package org.example.dayQ.day15;
+package org.example.day15.추가문제;
 
 public class 제너릭배열 {
     // 제네릭 메서드를 이용한 배열 최소값 찾기

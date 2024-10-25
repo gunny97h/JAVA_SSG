@@ -1,4 +1,4 @@
-package org.example.dayQ.day16;
+package org.example.day16;
 
 import javax.swing.*;
 import java.awt.*;

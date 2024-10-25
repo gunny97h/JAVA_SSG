@@ -1,4 +1,4 @@
-package org.example.dayQ.day13;
+package org.example.day13.추가문제;
 
 public class MainThread { //스레드사용2.java
     public static void main(String[] args) {

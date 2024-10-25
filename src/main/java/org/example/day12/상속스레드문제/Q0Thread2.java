@@ -1,4 +1,4 @@
-package org.example.dayQ.day12;
+package org.example.day12.상속스레드문제;
 
 import java.util.Date;
 

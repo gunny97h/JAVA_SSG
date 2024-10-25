@@ -1,4 +1,4 @@
-package org.example.dayQ.day14;
+package org.example.day14.추가문제;
 
 import javax.swing.*;
 

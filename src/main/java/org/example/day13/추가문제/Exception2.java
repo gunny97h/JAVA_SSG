@@ -1,4 +1,4 @@
-package org.example.dayQ.day13;
+package org.example.day13.추가문제;
 
 import java.io.IOException;
 import java.io.PrintWriter;
