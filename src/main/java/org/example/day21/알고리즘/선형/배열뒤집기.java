@@ -1,14 +1,13 @@
 package org.example.day21.알고리즘.선형;
 
-
-import java.util.Arrays;
+import org.example.ArrPrint;
 
 public class 배열뒤집기 { // NEW01-Java-9(알고리즘).pdf  p.152
     public static void main(String[] args) {
         int[] num_list = {4, 5, 6, 7, 8, 9, 10, 11, 12};
         Solution8 s = new Solution8();
         int[] answer = s.solution(num_list);
-        System.out.println(Arrays.toString(answer));
+        ArrPrint.p(answer);
     }
 }
 
