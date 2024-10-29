@@ -1,8 +1,18 @@
 package org.example.assignment.DLSR.designPattern.deepQ1Pattern;
 
 public class Main {
+    public static void main(String[] args) {
 
+        DatabaseConnection singleton1 = DatabaseConnection.getInstance();
+        System.out.println(singleton1);
+
+        DatabaseConnection singleton2 = DatabaseConnection.getInstance();
+        System.out.println(singleton2);
+    }
 }
+
+
+
 
 /*
 package org.example.assignment.DLSR.designPattern.deepQ1Pattern;

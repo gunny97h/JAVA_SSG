@@ -1,6 +1,7 @@
 package org.example.assignment.DLSR.lambdaStream;
 
 public class DeepQ5Stream {
+
 }
 /*
 package org.example;

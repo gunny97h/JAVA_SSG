@@ -1,6 +1,7 @@
 package org.example.assignment.DLSR.lambdaStream.deepQ7Stream;
 
 public class Employee2 {
+
 }
 /*
 package org.example.deep_q7_stream;
