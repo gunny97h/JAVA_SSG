@@ -5,13 +5,14 @@ public class 피자나눠먹기3 {
         Solution s = new Solution();
         System.out.println(s.solution(4, 15));
     }
-     static class Solution {
-        public int solution(int slice, int n) {
-            if (n%slice == 0) {
-                return n / slice;
-            } else {
-                return (n / slice) + 1;
-            }
+
+}
+class Solution {
+    public int solution(int slice, int n) {
+        if (n%slice == 0) {
+            return n / slice;
+        } else {
+            return (n / slice) + 1;
         }
     }
 }
