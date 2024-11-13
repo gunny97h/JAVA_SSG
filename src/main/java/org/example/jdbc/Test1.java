@@ -31,5 +31,7 @@ public class Test1 {
 
 
         con.close();
+        ps.close();
+
     }
 }
