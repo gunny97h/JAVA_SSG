@@ -1,4 +1,4 @@
-package org.example.jdbc;
+package org.example.database.jdbc;
 
 import java.util.Date;
 

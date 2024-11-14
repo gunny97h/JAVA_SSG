@@ -1,4 +1,4 @@
-package org.example.jdbc.assignments;
+package org.example.database.jdbc.assignments;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,11 +1,11 @@
-package org.example.jdbc.assignments;
+package org.example.database.jdbc.assignments;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.util.Scanner;
 
-public class DeptInsert {
+public class DeptDelete {
     public static void main(String[] args) throws Exception {
         //자바(언어)에서 db를 연결하는 프로그램 4단계
         //Java DB Connectivity(JDBC) 4단계
@@ -27,24 +27,18 @@ public class DeptInsert {
         Scanner sc = new Scanner(System.in);
         System.out.print("deptNo >> ");
         int deptNo값 = sc.nextInt();
-        System.out.print("deptName >> ");
-        String deptName값 = sc.next();
-        System.out.print("loc >> ");
-        String loc값 = sc.next();
-
         sc.close();
 
-        String sql = "insert into dept values (?, ?, ?)";
+        String sql = "delete from dept where deptno = ?";
         PreparedStatement ps = con.prepareStatement(sql);
         ps.setInt(1, deptNo값);
-        ps.setString(2, deptName값);
-        ps.setString(3, loc값);
+
         System.out.println("3. SQL문 부품(객체)으로 만들어주기 성공.");
 
         //4단계 - dbms로 sql문 전송
         int result = ps.executeUpdate();
         System.out.println("4. SQL문 MYSQL로 보내기 성공.");
-        System.out.println("삽입 성공\n처리된 row 수 >> " + result);
+        System.out.println("수정 성공\n처리된 row 수 >> " + result);
 
 
 
